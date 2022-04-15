@@ -1,10 +1,12 @@
 import './App.css';
+import File from './components/File';
 
 const App = () => {
 	return (
 		<div>
 			<Header />
 			<Technologies />
+			<File />
 		</div>
 	);
 }
