@@ -1,5 +1,7 @@
 import './App.css';
 import File from './components/File';
+import Header from './components/Header';
+import Technologies from './components/Technologies';
 
 const App = () => {
 	return (
@@ -9,27 +11,6 @@ const App = () => {
 			<File />
 		</div>
 	);
-}
-
-
-const Header = () => {
-	return(
-		<div>
-			<a href='#'>1</a>
-			<a href='#'>2</a>
-			<a href='#'>3</a>
-			<a href='#'>4</a>
-		</div>
-	)
-}
-const Technologies = () => {
-	return(
-		<div>
-			<div>One</div>
-			<div>Two</div>
-			<div>Three</div>
-		</div>
-	)
 }
 
 export default App;
