@@ -1,5 +1,5 @@
 import './App.css';
-import File from './components/File';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Technologies from './components/Technologies';
 
@@ -8,7 +8,7 @@ const App = () => {
 		<div>
 			<Header />
 			<Technologies />
-			<File />
+			<Footer />
 		</div>
 	);
 }
