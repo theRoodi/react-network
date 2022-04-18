@@ -1,10 +1,9 @@
 const Header = () => {
     return (
         <div>
-            <a href='#'>1</a>
-            <a href='#'>2</a>
-            <a href='#'>3</a>
-            <a href='#'>4</a>
+            <a href='#'>Home</a>
+            <a href='#'>News</a>
+            <a href='#'>Messages</a>
         </div>
     )
 }
