@@ -7,28 +7,5 @@
   grid-template-areas: 
     "header header"
     "nav content";
-  grid-gap: 10px;
-}
-.header{
-  grid-area: header;
-  background-color: #3b5998;
-}
-.header img {
-  padding: 13px;
-  width: 150px;
-}
-.nav{
-  grid-area: nav;
-  background-color:#007bb6;
-}
-.content{
-  grid-area: content;
-  background-color: #00aced;
-}
-.content img {
-  width: 100%;
-}
-.avatar img {
-  width: 60px;
-  border-radius: 50%;
+  grid-gap: 3px;
 }
