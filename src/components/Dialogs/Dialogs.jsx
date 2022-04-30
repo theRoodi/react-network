@@ -8,16 +8,16 @@ const Dialogs = (props) => {
         <div className={style.dialogs}>
             <div className={style.dialogsItems}>
                 <div className={style.dialog}>
-                    <NavLink className={setActive} to='/1'>One</NavLink>
+                    <NavLink className={setActive} to='/dialogs/1'>One</NavLink>
                 </div>
                 <div className={style.dialog}>
-                    <NavLink className={setActive} to='/2'>Two</NavLink>
+                    <NavLink className={setActive} to='/dialogs/2'>Two</NavLink>
                 </div>
                 <div className={style.dialog}>
-                    <NavLink className={setActive} to='/3'>Three</NavLink>
+                    <NavLink className={setActive} to='/dialogs/3'>Three</NavLink>
                 </div>
                 <div className={style.dialog}>
-                    <NavLink className={setActive} to='/4'>Four</NavLink>
+                    <NavLink className={setActive} to='/dialogs/4'>Four</NavLink>
                 </div>
             </div>
             <div className={style.messages}>
