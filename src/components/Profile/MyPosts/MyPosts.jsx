@@ -1,15 +1,21 @@
 import Post from "./Post/Post"
+import style from './MyPosts.module.css'
 
 const MyPosts = () => {
     return (
-        <div>
+        <div className={style.postsBlock}>
             My posts
             <div>
-                <textarea></textarea>
-                <button>Send</button>
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <button>Send</button>
+                </div>
+
             </div>
-            <Post likeCount='15' views = '93' message='Hi!' />
-            <Post likeCount='12' views = '23' message='first post' />
+            <Post likeCount='15' views='93' message='Hi!' />
+            <Post likeCount='12' views='23' message='first post' />
         </div>
     )
 }
