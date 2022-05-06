@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Dialogs from './components/Dialogs/Dialogs';
 import { Route, Routes } from 'react-router-dom';
 import News from './components/News/News';
+import Friends from './components/Friends/Friends';
 
 const App = (props) => {
 	return (
@@ -16,6 +17,7 @@ const App = (props) => {
 					<Route path='profile' element={<Profile state = {props.state.profilePage}/>} />
 					<Route path='dialogs' element={<Dialogs state = {props.state.dialogPage}/>} />
 					<Route path='news' element={<News/>} />
+					<Route path='friends' element={<Friends/>} />
 				</Routes>
 
 			</div>
