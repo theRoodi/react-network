@@ -1,4 +1,4 @@
-
+import {rerender} from './../render'
 let state = {
     profilePage: {
         postsData: [
@@ -31,6 +31,7 @@ export let addPost = (post) => {
     }
 
     state.profilePage.postsData.push(newPost)
+    rerender(state)
 }
 
 
