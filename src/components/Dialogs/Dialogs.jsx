@@ -1,5 +1,4 @@
 import React from 'react';
-import { addMessageActionCreator, updateNewMessageActionCreator } from '../../redux/dialogs-reducer';
 import Dialog from './Dialog/Dialog';
 import style from './Dialogs.module.css'
 import Message from './Message/Message';
@@ -7,21 +6,20 @@ import Message from './Message/Message';
 const Dialogs = (props) => {
     const setActive = ({ isActive }) =>(isActive ? style.active: style.dialog);
 
-    let addMessage = () => {
-        props.dispatch(addMessageActionCreator())
-    }
-
-    let dialogsElements = props.state.dialogsData.map( (dialog) => {
+    let dialogsElements = props.dialogPage.dialogsData.map( (dialog) => {
         return <Dialog className={setActive} id = {dialog.id} name = {dialog.name} />
     })
-    let messagesElements = props.state.messagesData.map( (message) => {
+    let messagesElements = props.dialogPage.messagesData.map( (message) => {
         return <Message className={setActive} message = {message.message} />
     })
-    let newMessage = props.state.newMessageText
+    let newMessage = props.dialogPage.newMessageText
 
+    let addMessage = () => {
+        props.addMessage()
+    }
     const onNewMessage = (e) => {
         let textUpdate = e.target.value;
-        props.dispatch(updateNewMessageActionCreator(textUpdate))
+        props.updateMessage(textUpdate)
     }
 
     return (

@@ -6,6 +6,8 @@ import Dialogs from './components/Dialogs/Dialogs';
 import { Route, Routes } from 'react-router-dom';
 import News from './components/News/News';
 import Friends from './components/Friends/Friends';
+import store from './redux/redux-store';
+import DialogsContainer from './components/Dialogs/DialogsContainer';
 
 const App = (props) => {
 	return (
@@ -14,10 +16,8 @@ const App = (props) => {
 			<Navbar />
 			<div className='app-wrapper-content'>
 				<Routes>
-					<Route path='profile' element={<Profile
-						state={props.state.profilePage}
-						dispatch={props.dispatch} />} />
-					<Route path='dialogs' element={<Dialogs state={props.state.dialogPage} dispatch = {props.dispatch} />} />
+					<Route path='profile' element={<Profile store={store}/>} />
+					<Route path='dialogs' element={<DialogsContainer store={store} />} />
 					<Route path='news' element={<News />} />
 					<Route path='friends' element={<Friends />} />
 				</Routes>
