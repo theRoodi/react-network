@@ -21,7 +21,7 @@ export let rerender = (state) => {
 }
 rerender(store.getState());
 
-store.subscribe(rerender);
+// store.subscribe(rerender);
 
 // store.subscribe(() => {
 //     let state = store.getState();
